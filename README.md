@@ -1,7 +1,7 @@
 # Mawj Quran Radio — موج
 
-A calm, ad-free Quran radio for listening to live recitations and Islamic
-programmes.
+A calm Quran radio for listening to live recitations and Islamic programmes,
+without accounts or in-app advertising.
 
 This public repository hosts **application downloads only**. The application
 source code is private. Download published builds from
@@ -15,10 +15,10 @@ platforms are distributed here when they are available.
 | Platform | Expected file | Notes |
 |---|---|---|
 | **Windows** | `Mawj-<version>-windows-x64.zip` | 64-bit. Extract the archive and run `Mawj.exe`. |
-| **Linux** | `Mawj-<version>-linux-x86_64` | 64-bit. Mark it executable, then run it. |
+| **Linux** | `Mawj-<version>-linux-x86_64.zip` | 64-bit. Extract the complete app folder before running it. |
 | **macOS** | `Mawj-<version>-macos-arm64.zip` | Apple Silicon build unless a release says otherwise. |
 | **iOS** | `Mawj-<version>-ios-unsigned.ipa` | Unsigned developer/sideloading build when provided. |
-| **Android** | `Mawj-<version>-android.apk` | The official Android channel is preferred; an APK may also be attached when provided. |
+| **Android** | `Mawj-<version>-android.apk` | Universal debug-signed sideload package; the official Google Play version is preferred. |
 
 Only files actually attached to a GitHub release are available. A platform
 listed in the table may not have a build in every release.
@@ -27,19 +27,21 @@ listed in the table may not have a build in every release.
 
 ### Windows
 
-Extract the zip and run `Mawj.exe` from the extracted folder. Keep any bundled
-`_internal` folder next to the executable. An unsigned build may trigger
+Extract the zip and run `Mawj/Mawj.exe`. Keep the bundled `_internal` folder
+next to the executable. An unsigned build may trigger
 Windows SmartScreen; review the downloaded file and release notes before
 choosing **More info → Run anyway**.
 
 ### Linux
 
 ```bash
-chmod +x Mawj-<version>-linux-x86_64
-./Mawj-<version>-linux-x86_64
+unzip Mawj-<version>-linux-x86_64.zip
+chmod +x Mawj/Mawj
+./Mawj/Mawj
 ```
 
-Linux builds are produced on Ubuntu and require a reasonably recent glibc.
+Keep the bundled `_internal` folder beside the executable. Linux builds are
+produced on Ubuntu for x86-64 and require a reasonably recent glibc.
 
 ### macOS
 
