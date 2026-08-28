@@ -68,6 +68,8 @@ an internet connection. Settings, favorites, listening history, and recordings
 are stored privately on the device. Radio and content providers receive normal
 connection data.
 
+Read the bilingual [Mawj Privacy Policy](privacy/).
+
 ## Issues
 
 Please report download or installation problems in this repository's
