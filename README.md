@@ -18,7 +18,7 @@ platforms are distributed here when they are available.
 | **Linux** | `Mawj-<version>-linux-x86_64.zip` | 64-bit. Extract the complete app folder before running it. |
 | **macOS** | `Mawj-<version>-macos-arm64.zip` | Apple Silicon build unless a release says otherwise. |
 | **iOS** | `Mawj-<version>-ios-unsigned.ipa` | Unsigned developer/sideloading build when provided. |
-| **Android** | `Mawj-<version>-android.apk` | Universal debug-signed sideload package; the official Google Play version is preferred. |
+| **Android** | `Mawj-<version>-android.apk` | Universal sideload package for phones and TV; see each release for signing details. The official Google Play version is preferred. |
 
 Only files actually attached to a GitHub release are available. A platform
 listed in the table may not have a build in every release.
@@ -53,13 +53,18 @@ instructions in that release.
 
 An unsigned `.ipa` cannot be installed by tapping it on a stock iPhone. It must
 be signed with your Apple ID using a sideloading/development workflow. Each
-release will state its supported devices and signing limitations.
+release will state its supported devices and signing limitations. A separate
+App Store-signed IPA, when included, is for upload to App Store Connect using
+Apple Transporter; use the unsigned IPA with your sideloading tool for testing.
 
 ### Android
 
 Use Mawj's official Android publishing channel when available. If an APK is
 attached here, Android may require you to allow installation from the browser or
-file manager used to open it.
+file manager used to open it. Release 1.0.11 also provides an optimized APK
+signed with the permanent Mawj upload key. This differs from older debug keys
+and from Google Play's app signing key: use Google Play to update Play-installed
+copies of Mawj. A signed AAB is provided for Google Play submission.
 
 ## Network and privacy
 
